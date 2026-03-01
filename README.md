@@ -21,7 +21,7 @@ Install dependencies and run the app:
 pip install -r requirements.txt
 streamlit run app.py
 
-![App Screenshot](./screenshot.png)
+![App Screenshot](screenshot.png)
 
 ## Tools Used
 Python, Streamlit, Plotly, Pandas
