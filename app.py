@@ -111,3 +111,34 @@ with tab2:
     )
 
     st.plotly_chart(fig, use_container_width=True)
+
+st.divider()
+st.header("Reduction Recommendations")
+
+if total == 0:
+    st.info("Enter your company data in the sidebar to see recommendations.")
+else:
+    scopes = {'Scope 1': scope1, 'Scope 2': scope2, 'Scope 3': scope3}
+    highest = max(scopes, key=scopes.get)
+    
+    st.warning(f"Your highest emission source is {highest}. Focus here first.")
+    
+    if highest == 'Scope 1':
+        st.markdown("""
+        **Priority Actions:**
+        Transition your vehicle fleet to electric vehicles. Replace gas-powered heating systems with heat pumps. 
+        Install on-site solar panels to reduce dependence on fossil fuels.
+        """)
+    elif highest == 'Scope 2':
+        st.markdown("""
+        **Priority Actions:**
+        Switch to a renewable energy tariff immediately — this is the single fastest way to reduce Scope 2 emissions. 
+        Conduct an energy audit to identify inefficiencies and upgrade to LED lighting throughout your facilities.
+        """)
+    elif highest == 'Scope 3':
+        st.markdown("""
+        **Priority Actions:**
+        Introduce a remote work policy to reduce employee commuting emissions. 
+        Replace business flights with video conferencing where possible. 
+        Implement a supplier ESG screening process and set waste reduction targets.
+        """)
