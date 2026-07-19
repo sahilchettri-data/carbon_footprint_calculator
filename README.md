@@ -1,4 +1,4 @@
-# 🌿 Carbon Footprint Calculator
+# Carbon Footprint Calculator
 
 An interactive web application that helps companies calculate and visualize their Scope 1, 2, and 3 greenhouse gas emissions in line with the GHG Protocol — the same standard required under CSRD reporting frameworks.
 
